@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; font-family: Inter, Segoe UI, Arial, sans-serif; }
+body { margin: 0; min-height: 100vh; background: #f3f6fb; color: #182235; }
+.app { width: min(760px, calc(100% - 32px)); margin: 48px auto; }
+header { margin-bottom: 28px; }
+.eyebrow { color: #526b9a; font-size: .75rem; font-weight: 700; letter-spacing: .14em; }
+h1 { margin: 8px 0; font-size: clamp(2rem, 6vw, 3rem); }
+.subtitle { color: #64718a; }
+.composer, .note-card { background: white; border: 1px solid #e0e7f1; border-radius: 14px; padding: 20px; box-shadow: 0 8px 24px #1b31500b; }
+label { display: block; margin: 12px 0 6px; font-weight: 650; }
+input, textarea { width: 100%; padding: 11px 12px; border: 1px solid #cbd5e3; border-radius: 8px; font: inherit; }
+textarea { resize: vertical; }
+button { border: 0; border-radius: 8px; padding: 11px 16px; margin-top: 12px; background: #244f9e; color: white; font: inherit; font-weight: 650; cursor: pointer; }
+button:hover { background: #183d80; }
+#message { min-height: 1.2em; color: #28633c; }
+.notes-section { margin-top: 30px; }
+.section-heading { display: flex; gap: 16px; align-items: center; justify-content: space-between; }
+.section-heading h2 { margin: 0 0 14px; }
+.section-heading input { max-width: 240px; margin-bottom: 14px; }
+.notes-list { display: grid; gap: 12px; }
+.note-card h3 { margin: 0 0 8px; }
+.note-card p { white-space: pre-wrap; color: #526078; }
+.note-actions { display: flex; gap: 8px; }
+.note-actions button { margin-top: 4px; padding: 8px 12px; }
+.note-actions .delete { background: #9b3030; }
+#empty-state { color: #718096; text-align: center; padding: 22px; }
+footer { margin: 32px 0; color: #7a879a; font-size: .85rem; text-align: center; }
+@media (max-width: 560px) { .section-heading { display: block; } .section-heading input { max-width: none; } }
